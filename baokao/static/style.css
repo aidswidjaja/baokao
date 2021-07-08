@@ -1,0 +1,58 @@
+.footer {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.content {
+    margin: 30px;
+}
+
+.description-list {
+    margin-left: 30px;
+}
+
+.dark-mode-toggle {
+    margin-right: 20px;
+}
+
+.php-error {
+    padding: 5px;
+}
+
+.footer-text {
+    font-weight: bold;
+}
+
+.icon-list {
+    list-style-type: none;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.icon-list-text {
+    padding: 10px;
+    display: inline-block;
+}
+
+.title-brand {
+    padding-left: 10px;
+    margin: auto;
+    font-family: 'Cascadia Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.title-brand:hover {
+    text-decoration: none;
+}
+
+.underlineNav-actions {
+    text-align: right;
+}
+
+.no-js {
+    visibility: visible;
+}
