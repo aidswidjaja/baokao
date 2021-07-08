@@ -1,8 +1,5 @@
 {
     "autoload": {
         "psr-4": {"baokao\\": "baokao/classes"}
-    },
-    "require": {
-        "twig/twig": "^3.0"
     }
 }

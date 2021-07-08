@@ -7,7 +7,4 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'baokao\\' => array($baseDir . '/baokao/classes'),
-    'Twig\\' => array($vendorDir . '/twig/twig/src'),
-    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
-    'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
 );
