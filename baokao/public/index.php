@@ -1,5 +1,6 @@
 <?php include "../include/head.php"; ?>
 <?php include "../include/navbar.php"; ?>
+<title>baokao ~ study resources</title>
 
 <div class="content">
 
@@ -39,4 +40,4 @@
         <br>
 </div>
 
-<script src="../static/darkmode.js"></script>
+<script src="static/darkmode.js"></script>

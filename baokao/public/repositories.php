@@ -1,6 +1,6 @@
 <?php include "../include/head.php"; ?>
 <?php include "../include/navbar.php"; ?>
-<link href="../static/repositories.css" rel="stylesheet" />
+<link href="static/repositories.css" rel="stylesheet" />
 <script>
     document.getElementById("nav-repositories").setAttribute("aria-current", "page")
 </script>
@@ -17,33 +17,45 @@
         $sqlite_db = new PDO($dsn);
         $result = $sqlite_db->query("SELECT * FROM repositories");
 
-        foreach ($result as $row) {
-            /* strip_tags() just in case ;) */
-            $name = strip_tags($row['name']);
-            $info = strip_tags($row['info']);
-            $colour = strip_tags($row['colour']);
-            $image = strip_tags($row['image']);
-            echo <<<HTML
-            <div class="repositories-flexbox">
-                <div class="Box Box--spacious f4 repositories-unit-container hover-grow">
-                    <div class="Box-header image-header">
-                        <style>
-                            .image-header {
-                                background-color: $colour;
-                                background-image: url($image);
-                            }
-                        </style>
-                    </div>
-                    <div class="Box-row">
-                        <h3 class="Box-title Truncate-text">
-                        $name
-                        </h3>
-                        <p class="Truncate-text--primary repositories-info">
-                        $info
-                        </p>
+        try {
+            foreach ($result as $row) {
+                /* strip_tags() just in case ;) */
+                $name = strip_tags($row['name']);
+                $info = strip_tags($row['info']);
+                $slug = strip_tags($row['slug']);
+                $colour = strip_tags($row['colour']);
+                $image = strip_tags($row['image']);
+                echo <<<HTML
+                <div class="repositories-flexbox">
+                    <div onclick="location.href = 'tree/$slug'"class="Box Box--spacious f4 repositories-unit-container hover-grow">
+                        <div class="Box-header image-header image-header-$slug">
+                            <style>
+                                .image-header-$slug {
+                                    background-color: $colour;
+                                    background-image: url($image);
+                                }
+                            </style>
+                        </div>
+                        <div class="Box-row">
+                            <h3 class="Box-title Truncate-text">
+                            $name
+                            </h3>
+                            <p class="Truncate-text--primary repositories-info">
+                            $info
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+                HTML;
+            }
+        } 
+        catch (Exception $error) {
+            echo <<<HTML
+                <div class="flash mt-3 flash-error">
+                    <svg class="octicon octicon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"></path></svg>      
+                    <strong>Something went wrong :(</strong> - please report this error to <strong>baokao@adrian.id.au</strong><br><br>
+                    <strong>Exception thrown: </strong><br><pre>$error</pre>
+                    </div>
             HTML;
         }
 

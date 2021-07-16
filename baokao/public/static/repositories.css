@@ -13,7 +13,9 @@
 .repositories-unit-container {
     height: 20em;
     width: 20em;
-    margin: 5px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .repositories-unit-container:hover {

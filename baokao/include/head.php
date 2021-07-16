@@ -20,10 +20,11 @@
   <link rel="apple-touch-icon" href="icon.png">
 
   <link href="http://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
-  <script src="../static/ready.js"></script>
+  <script type="text/javascript" src="static/ready.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.0/dist/purify.min.js"></script>
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-  <link href="../static/style.css" rel="stylesheet" />
-  <link href="../static/primer.css" rel="stylesheet" />
+  <link type="text/css" href="static/style.css" rel="stylesheet" />
+  <link type="text/css"href="static/primer.css" rel="stylesheet" />
 </head>
 
 <body class="no-js" data-color-mode="" data-light-theme="light" data-dark-theme="dark" style="visibility: hidden;">
