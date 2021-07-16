@@ -17,7 +17,8 @@ Minimal dependencies because the Twig templating engine was too hard to use.
 
 - [Primer CSS](https://primer.style) — MIT License
 - [Hover](https://github.com/IanLunn/Hover) — MIT License
-- [Axios](https://axios-http.com) - MIT License
+- [Axios](https://axios-http.com) — MIT License
+- [DOMPurify](https://github.com/cure53/DOMPurify) — MPL-2.0 / Apache-2.0
 
 ## setup
 
