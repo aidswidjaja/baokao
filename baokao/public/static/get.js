@@ -1,4 +1,3 @@
-const google_drive_api_key = "AIzaSyBq5RnMYATxIMrKA0goCF9pgSiACeZEmRk";
 const request = "https://www.googleapis.com/drive/v3/files?q='1JMIMC1D2YPqVk9bQHyM-8hykBdpi6qWg'+in+parents&key=" + google_drive_api_key;
 const file_explorer = document.getElementById('file-explorer');
 
