@@ -2,9 +2,9 @@
 <html class="no-js" lang="">
 
 <!--
-    baokao is available at https://github.com/aidswidjaja/baokao and is distributed under the Apache 2.0 license, 
-    available at https://www.apache.org/licenses/LICENSE-2.0. Also, you can find my anime list at
-    https://anime.adrian.id.au and see how much time of my life I've wasted on anime.
+    baokao is available at https://github.com/aidswidjaja/baokao
+    and is distributed under the Apache 2.0 license, available
+    at https://www.apache.org/licenses/LICENSE-2.0
 -->
 
 <head>
@@ -23,11 +23,13 @@
   <script type="text/javascript" src="static/ready.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.0/dist/purify.min.js"></script>
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>
-  <link type="text/css" href="static/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/inter-ui@3.19.2/inter.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js"></script>
   <link type="text/css"href="static/primer.css" rel="stylesheet" />
+  <link type="text/css" href="static/style.css" rel="stylesheet" />
 </head>
 
-<body class="no-js" data-color-mode="" data-light-theme="light" data-dark-theme="dark" style="visibility: hidden;">
+<body class="no-js" data-color-mode="" data-light-theme="light" data-dark-theme="dark"  prefers-color-scheme="" style="visibility: hidden;">
   <script>
     document.querySelector('body').classList.remove('no-js');
   </script>

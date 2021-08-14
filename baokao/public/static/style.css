@@ -1,3 +1,7 @@
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 .footer {
     padding-top: 15px;
     padding-bottom: 5px;
@@ -40,7 +44,6 @@
 .title-brand {
     padding-left: 10px;
     margin: auto;
-    font-family: 'Cascadia Code', Consolas, "Liberation Mono", Menlo, Courier, monospace;
     font-weight: 400;
     font-size: 1.2rem;
 }
@@ -55,4 +58,29 @@
 
 .no-js {
     visibility: visible;
+}
+
+.share-icon {
+    color: var(--color-btn-outline-hover-bg);
+}
+
+.share-icon:hover {
+    color: var(--color-btn-outline-hover-text);
+}
+
+#parent-button {
+    cursor: pointer;
+}
+
+.jumbotron {
+    text-align: center;
+    height: 70vh;
+}
+
+.jumbotron-filler {
+    height: 40%;
+}
+
+.about-link {
+    color: var(--color-scale-purple-4);
 }

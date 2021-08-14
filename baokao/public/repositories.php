@@ -27,8 +27,8 @@
                 $image = strip_tags($row['image']);
                 echo <<<HTML
                 <div class="repositories-flexbox">
-                    <div onclick="location.href = 'tree/$slug'"class="Box Box--spacious f4 repositories-unit-container hover-grow">
-                        <div class="Box-header image-header image-header-$slug">
+                    <div onclick="location.href = 'tree/$slug'" class="Box--spacious border-none rounded-1 f4 repositories-unit-container color-shadow-medium hover-grow">
+                        <div class="rounded-1 image-header image-header-$slug">
                             <style>
                                 .image-header-$slug {
                                     background-color: $colour;
@@ -37,12 +37,14 @@
                             </style>
                         </div>
                         <div class="Box-row">
-                            <h3 class="Box-title Truncate-text">
+                            <span class="Truncate">
+                            <h3 class="Box-title Truncate-text--primary">
                             $name
                             </h3>
-                            <p class="Truncate-text--primary repositories-info">
-                            $info
-                            </p>
+                            </span>
+                            <span class="repositories-info">
+                            <p class="repositories-info-text">$info</p>
+                            </span>
                         </div>
                     </div>
                 </div>

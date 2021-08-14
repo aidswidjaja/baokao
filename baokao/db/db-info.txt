@@ -1,0 +1,1 @@
+Don't store sensitive information in this database! It's designed to be committed to the Git repository so contributors can make manual and public modifications to it.

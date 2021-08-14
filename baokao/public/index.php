@@ -1,11 +1,13 @@
 <?php include "../include/head.php"; ?>
 <?php include "../include/navbar.php"; ?>
 <title>baokao ~ study resources</title>
-
+<script>
+    document.getElementById("nav-home").setAttribute("aria-current", "page")
+</script>
 <div class="content">
 
     <h5 class="h4-mktg">find what you need with <span class="color-icon-info">baokao</span></h1>
-        <h6 class="h6-mktg">free and open-source study resources, forever</h6>
+        <h6 class="h6-mktg">the free and open-source study resource viewer</h6>
         <br>
         <ul class="icon-list">
             <li>
@@ -27,15 +29,21 @@
                 <span class="f3-light icon-list-text">targeted at the NSW HSC</span>
             </li>
         </ul>
-        <p>baokao is a study resource viewer that makes finding, collaborating and viewing the resources you want, easy. </p>
+        <p>baokao is a web application that makes finding, collaborating and viewing the study resources you want, easy. </p>
         <ul class="description-list">
-            <li>Bundles of resources are known as <strong>Repositories</strong> and they contain past papers, study notes and preparation material from all over the internet.</li>
-            <li>Each Repository is managed by a different group of people who help create, manage and curate the content within it.</li>
-            <li>baokao provides an easy way to view and collaborate with documents and student-created material.</li>
+            <li>Bundles of resources are known as <strong>Repositories</strong> and they contain past papers, study notes and preparation material from all over the internet</li>
+            <li>Each Repository is managed by a different group of people who help create, manage and curate the content within it</li>
+            <li>baokao provides an easy way to view and collaborate with documents and student-created material</li>
         </ul>
         <br>
+        <div class="flash">
+            baokao is currently in Early Access, which means a small amount of resources are available and features are currently limited. See the <a href="about">About</a> page for more info.
+        </div>
+        <br>
         <div class="f3">
-            <a class="btn btn-large btn-primary" href="repositories" role="button"><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill-rule="evenodd" d="M2 4.75C2 3.784 2.784 3 3.75 3h4.965a1.75 1.75 0 011.456.78l1.406 2.109a.25.25 0 00.208.111h8.465c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0120.25 21H3.75A1.75 1.75 0 012 19.25V4.75zm12.78 4.97a.75.75 0 10-1.06 1.06l1.72 1.72H6.75a.75.75 0 000 1.5h8.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3a.75.75 0 000-1.06l-3-3z"></path></svg> Get started</a>
+            <a class="btn btn-large btn-primary" href="repositories" role="button"><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                    <path fill-rule="evenodd" d="M2 4.75C2 3.784 2.784 3 3.75 3h4.965a1.75 1.75 0 011.456.78l1.406 2.109a.25.25 0 00.208.111h8.465c.966 0 1.75.784 1.75 1.75v11.5A1.75 1.75 0 0120.25 21H3.75A1.75 1.75 0 012 19.25V4.75zm12.78 4.97a.75.75 0 10-1.06 1.06l1.72 1.72H6.75a.75.75 0 000 1.5h8.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3a.75.75 0 000-1.06l-3-3z"></path>
+                </svg> Get started</a>
         </div>
         <br>
 </div>

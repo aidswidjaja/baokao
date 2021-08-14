@@ -2,7 +2,7 @@
     height: 10em;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
 }
 
 .repositories-flexbox {
@@ -14,13 +14,36 @@
     height: 20em;
     width: 20em;
     margin-right: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
 .repositories-unit-container:hover {
     height: 20em;
     width: 20em;
+}
+
+@media (max-width: 755px) {
+    .repositories-flexbox {
+        display: block;
+    }
+
+    .repositories-unit-container {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .repositories-unit-container:hover {
+        height: 20em;
+        width: 100%;    
+    }
+}
+
+.repositories-info-text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 
 .hvr-grow {
@@ -33,9 +56,9 @@
     transition-duration: 0.3s;
     -webkit-transition-property: transform;
     transition-property: transform;
-  }
-  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+}
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
-  }
-  
+}
