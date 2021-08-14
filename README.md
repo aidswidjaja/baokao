@@ -33,6 +33,7 @@ Because I hate high-quality maintainable code that uses the industry-standard MV
 ### environment
 
 - `baokao/public/static/env.js`
+- `baokao/include/env.php`
 
 ### keys
 #### Google Drive API
