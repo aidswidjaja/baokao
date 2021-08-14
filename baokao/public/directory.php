@@ -3,8 +3,6 @@
 <div class="content">
     <?php
 
-    require '../../vendor/autoload.php';
-
     $query = 0;
 
     if (isset($_SERVER['QUERY_STRING'])) {

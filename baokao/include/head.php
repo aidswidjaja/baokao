@@ -39,3 +39,5 @@
     <strong> You don't have JavaScript enabled!</strong> You'll probably experience errors trying to access baokao. Make sure your network connection is stable. If you're in a school network, ask your network administrator to whitelist <strong>baokao.adrian.id.au</strong> so you can use the site properly :)
     </div>
   </noscript>
+
+  <?php require '../../vendor/autoload.php'; ?>

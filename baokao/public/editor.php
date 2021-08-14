@@ -8,8 +8,6 @@
 
 <?php
 
-require '../../vendor/autoload.php';
-
 if (isset($_SERVER['QUERY_STRING'])) {
     global $query;
     $query = str_replace("=", "", htmlspecialchars($_SERVER['QUERY_STRING']));

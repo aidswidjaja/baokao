@@ -1,5 +1,10 @@
 {
+    "require": {
+        "ext-pdo_sqlite": "*"
+    },
     "autoload": {
-        "psr-4": {"baokao\\": "baokao/classes"}
+        "psr-4": {
+            "baokao\\": "baokao/classes"
+        }
     }
 }

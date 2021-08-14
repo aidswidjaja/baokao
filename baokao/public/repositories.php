@@ -11,8 +11,6 @@
     <div class="repositories-flexbox">
         <?php
 
-        require '../../vendor/autoload.php';
-
         $dsn = "sqlite:../db/repositories.db";
         $sqlite_db = new PDO($dsn);
         $result = $sqlite_db->query("SELECT * FROM repositories");
