@@ -35,13 +35,15 @@ Because I hate high-quality maintainable code that uses the industry-standard MV
 - `baokao/public/static/env.js`
 
 ### keys
-
+#### Google Drive API
 Create a API key at https://console.cloud.google.com/apis/credentials and then fill it in `baokao/public/static/env.js`.
 
 - Google Drive API key should be restricted in production with a HTTP restriction to your domain (https://cloud.google.com/docs/authentication/api-keys#adding_http_restrictions) and API restriction (Google Drive API)
 - Keys exposed to the client should only have access to the free Google Drive API and be restricted by HTTP domain or IP address.
-- Exposing API keys to the client is pretty poor security practice. Too bad!
+- Exposing API keys to the client is pretty poor security practice. Too bad! We're relying on the HTTP restrictions and the limited sensitivity of the scopes to not get hacked...
 
+#### Cusdis
+Make an account on https://cusdis.com/ and then fill it in `baokao/include/env.php`
 ## license
 
 MIT License - see LICENSE for more info.
