@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 baokao/public/ -C apache.conf
+web: vendor/bin/heroku-php-apache2 -C apache.conf -i php.ini baokao/public/
