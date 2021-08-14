@@ -25,7 +25,7 @@
                 $image = strip_tags($row['image']);
                 echo <<<HTML
                 <div class="repositories-flexbox">
-                    <div onclick="location.href = 'tree/$slug'" class="Box--spacious border-none rounded-1 f4 repositories-unit-container color-shadow-medium hover-grow">
+                    <div onclick="location.href = 'tree?$slug'" class="Box--spacious border-none rounded-1 f4 repositories-unit-container color-shadow-medium hover-grow">
                         <div class="rounded-1 image-header image-header-$slug">
                             <style>
                                 .image-header-$slug {
