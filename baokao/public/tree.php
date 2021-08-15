@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-            HTML;
+HTML;
             $repo_loaded = True;
         }
     } catch (Exception $error) {
@@ -55,7 +55,7 @@
                     <strong>Something went wrong :(</strong> - please report this error to <strong>baokao@adrian.id.au</strong><br><br>
                     <strong>Exception thrown: </strong><br><pre>$error</pre>
                     </div>
-            HTML;
+HTML;
     }
 
     if (!$repo_loaded) {
@@ -69,7 +69,7 @@
             </div>
             </div>
             <br>
-        HTML;
+HTML;
         include "../include/footer.php";
         return 0;
     }

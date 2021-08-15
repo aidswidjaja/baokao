@@ -26,7 +26,7 @@
                         window.location.replace(folder_redirect_link); 
                         console.log(window.location.hostname);
                     </script>
-                HTML;
+HTML;
             }
         } catch (Exception $error) {
             echo <<<HTML
@@ -35,7 +35,7 @@
                         <strong>Something went wrong :(</strong> - please report this error to <strong>baokao@adrian.id.au</strong><br><br>
                         <strong>Exception thrown: </strong><br><pre>$error</pre>
                         </div>
-                HTML;
+HTML;
         }
     }
 
@@ -46,7 +46,7 @@
             <script>
                 const google_drive_folder_id = '$query';
             </script>
-    HTML;
+HTML;
     $repo_loaded = True;
 
     if (!$repo_loaded) {
@@ -60,7 +60,7 @@
             </div>
             </div>
             <br>
-        HTML;
+HTML;
         include "../include/footer.php";
         return 0;
     }

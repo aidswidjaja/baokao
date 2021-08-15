@@ -55,7 +55,7 @@ try {
     <script async src="https://cusdis.com/js/cusdis.es.js"></script>
     </div>
     </div>
-    HTML;
+HTML;
 
 } catch (Exception $error) {
     echo <<<HTML
@@ -64,7 +64,7 @@ try {
         <strong>Something went wrong :(</strong> - please report this error to <strong>baokao@adrian.id.au</strong><br><br>
         <strong>Exception thrown: </strong><br><pre>$error</pre>
         </div>
-    HTML;
+HTML;
 }
 
 ?>
