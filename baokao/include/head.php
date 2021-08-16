@@ -17,8 +17,11 @@
   <meta property="og:url" content="https://baokao.adrian.id.au">
   <meta property="og:image" content="">
 
-  <link rel="apple-touch-icon" href="icon.png">
-
+  <link rel="apple-touch-icon" href="baokao.png">
+<link rel="icon" 
+      type="image/png" 
+      href="baokao.png">
+	  
   <style> .frame-example { min-height: 500px; } </style>
   <!-- primer box overlay - not supposed to use in prod, but I'm going to because it's the only one that works -->
   <link href="https://unpkg.com/@github/details-dialog-element/dist/index.css" rel="stylesheet" /> 

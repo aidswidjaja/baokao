@@ -72,7 +72,6 @@
     <br>
     <h4>I want to start my own repository</h4>
     <p>Please get in touch with us at <a href="mailto:baokao@adrian.id.au">baokao@adrian.id.au</a>! Keep in mind while baokao is in Early Access there are a number of technical limitations with the site that still currently exist, but we'll do our best to accomodate any of your requests. In the future, we'll hopefully be able to get new repositories started quicker in a more streamlined and efficient way.</p>
-    <br>
     <h4>I want to help improve the baokao web application</h4>
     <p>Pull requests are very much welcome via our <a href="https://github.com/aidswidjaja/baokao" target="_blank">GitHub repository.</a>
     <br>
