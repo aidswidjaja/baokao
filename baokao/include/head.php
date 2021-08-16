@@ -19,7 +19,9 @@
 
   <link rel="apple-touch-icon" href="icon.png">
 
-  <link href="http://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
+  <style> .frame-example { min-height: 500px; } </style>
+  <!-- primer box overlay - not supposed to use in prod, but I'm going to because it's the only one that works -->
+  <link href="https://unpkg.com/@github/details-dialog-element/dist/index.css" rel="stylesheet" /> 
   <script type="text/javascript" src="static/ready.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/dompurify@2.3.0/dist/purify.min.js"></script>
   <script type="module" src="https://unpkg.com/dark-mode-toggle"></script>

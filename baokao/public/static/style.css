@@ -84,3 +84,8 @@ body {
 .about-link {
     color: var(--color-scale-purple-4);
 }
+
+.tree-action-button {
+    display: inline;
+    margin: 3px;
+}

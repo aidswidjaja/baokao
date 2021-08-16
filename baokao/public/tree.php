@@ -39,9 +39,31 @@
                             <p>$description</p>
                             <br>
                             <div class="repositories-actions">
-                                <button class="btn btn-primary" type="button" id="repositories-add"><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.53 1.22a.75.75 0 00-1.06 0L3.72 4.97a.75.75 0 001.06 1.06l2.47-2.47v6.69a.75.75 0 001.5 0V3.56l2.47 2.47a.75.75 0 101.06-1.06L8.53 1.22zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Upload</span></button>
-                                <button class="btn" type="button" id="repositories-add"><svg class="octicon search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg><span>Search</span></button>
-                                <button class="btn" type="button" id="copy-current-location" data-clipboard-target=""><svg class="octicon share-icon outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M13.5 3a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 3a3 3 0 01-5.175 2.066l-3.92 2.179a3.005 3.005 0 010 1.51l3.92 2.179a3 3 0 11-.73 1.31l-3.92-2.178a3 3 0 110-4.133l3.92-2.178A3 3 0 1115 3zm-1.5 10a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-9-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg><span>Share</span></button>
+                            <details class="tree-action-button details-reset details-overlay details-overlay-dark" id="upload-info-dialog">
+                                    <summary class="btn btn-primary repository-temp-upload" aria-haspopup="dialog" id="upload-info-dialog-toggle">                                
+                                        <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M8.53 1.22a.75.75 0 00-1.06 0L3.72 4.97a.75.75 0 001.06 1.06l2.47-2.47v6.69a.75.75 0 001.5 0V3.56l2.47 2.47a.75.75 0 101.06-1.06L8.53 1.22zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Upload</span>
+                                    </summary>
+                                    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+                                        <div class="Box-header">
+                                            <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog id="upload-info-dialog-x">
+                                                <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"></path></svg>
+                                            </button>
+                                            <h3 class="Box-title">Upload files in Google Drive</h3>
+                                        </div>
+
+                                    <div class="overflow-auto">
+                                        <div class="Box-body overflow-auto">
+                                            <p>
+                                            One-click upload is not yet available in baokao Early Access. If you would like to contribute to this repository, see our <a href="contributions">Contributions</a> page and upload your file directly to Google Drive.
+                                            </p>
+                                        </div>
+                                        <div class="Box-footer">
+                                            <a href="https://drive.google.com/drive/folders/$google_drive_folder_id" target="_blank" type="button" class="btn btn-block" data-close-dialog>Go to Google Drive</a>
+                                        </div>
+                                    </details-dialog>
+                                </details>
+                                <!-- <button class="btn" type="button" id="repositories-add"><svg class="octicon search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M11.5 7a4.499 4.499 0 11-8.998 0A4.499 4.499 0 0111.5 7zm-.82 4.74a6 6 0 111.06-1.06l3.04 3.04a.75.75 0 11-1.06 1.06l-3.04-3.04z"></path></svg><span>Search</span></button> -->
+                                <button class="tree-action-button btn" type="button" id="copy-current-location" data-clipboard-target=""><svg class="octicon share-icon outline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M13.5 3a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 3a3 3 0 01-5.175 2.066l-3.92 2.179a3.005 3.005 0 010 1.51l3.92 2.179a3 3 0 11-.73 1.31l-3.92-2.178a3 3 0 110-4.133l3.92-2.178A3 3 0 1115 3zm-1.5 10a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-9-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg><span>Share</span></button>
                             </div>
                         </div>
                     </div>
@@ -74,7 +96,7 @@ HTML;
         return 0;
     }
     ?>
-    
+
     <br>
 
     <nav class="menu" aria-label="File explorer" id="file-explorer">
@@ -93,6 +115,7 @@ HTML;
     <script type="text/javascript" src="static/get.js"></script>
     <script type="text/javascript" src="static/copy.js"></script>
     <script type="text/javascript" src="static/repositories-actions.js"></script>
+    <script src="static/github-box-overlay.js"></script>
 
 </div>
 
