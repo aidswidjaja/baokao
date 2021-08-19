@@ -89,3 +89,12 @@ body {
     display: inline;
     margin: 3px;
 }
+
+#cusdis-wrapper {
+    padding: 10px;
+}
+
+#cusdis-parent {
+    background-color: #ffffff;
+    border-radius: 4px;
+}

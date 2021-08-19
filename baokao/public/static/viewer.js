@@ -110,6 +110,7 @@ try {
                         file_mimetype = true;
                 }
 
+
                 if (url_mimetype != "file") {
                     const docedit_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id + "/edit";
                     const download_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id + "/export?format=";
@@ -117,26 +118,28 @@ try {
                     const docdownload = download_link_starter + 'doc';
                     const dropdown_html = '<details class="dropdown details-reset details-overlay d-block"> <summary id="download-button" class="btn btn-primary btn-block mb-2" aria-haspopup="true"> <svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg>Download <div class="dropdown-caret"></div> </summary> <ul class="dropdown-menu dropdown-menu-se"> <li><a class="dropdown-item" id="download-as-pdf" href="' + pdfdownload +'">Download as PDF</a></li> <li><a class="dropdown-item" id="download-as-doc" href="' + docdownload +'">Download as DOCX</a></li> </ul> </details>';
                     download.innerHTML = dropdown_html;
-                    if (editing_enabled == true) {             /* editing enabled */
+                    
+                    if (editing_enabled == true) {      /* editing enabled */    
+                        external_link = docedit_link_starter;
                         if (typeof data.resourceKey !== 'undefined') {
                             iframe_link = docedit_link_starter + "?rm=embedded&chrome=false&resourcekey=" + data.resourceKey;
-                            external_link = docedit_link_starter;
                             console.log("Google Doc + Editing + resourceKey");
                         } else {
                             iframe_link = docedit_link_starter + "?rm=embedded&chrome=false";
-                            external_link = docedit_link_starter;
                             console.log("Google Doc + Editing");
                         }
                     } else {
-                        const docview_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id + "/preview";
+                        const docview_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id;
+                        external_link = docedit_link_starter;
                         if (typeof data.resourceKey !== 'undefined') {
                             iframe_link = docview_link_starter + "?resourcekey=" + data.resourceKey;
                             console.log("Google Doc + Viewing + resourceKey");
                         } else {
-                            iframe_link = docview_link_starter
+                            iframe_link = docview_link_starter;
                             console.log("Google Doc + Viewing");
                         }
                     }
+
                 } else {
                     const drive_link_starter = "https://drive.google.com/file/d/" + google_drive_file_id + "/preview";
                     const status = document.getElementById('editing-status');

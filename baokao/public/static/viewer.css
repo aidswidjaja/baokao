@@ -1,4 +1,4 @@
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     .sidebar {
         width: 400px;
         height: calc(100vh - 48px);
@@ -11,7 +11,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
     .sidebar {
         width: 100%;
         height: 95vh;
@@ -19,7 +19,7 @@
     }
     .docviewer {
         width: 100%;
-        height: 95vh;
+        height: 85vh;
         float: top;
     }
 }

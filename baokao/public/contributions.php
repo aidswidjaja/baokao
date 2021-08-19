@@ -8,6 +8,12 @@
 
     <h1>Contributions</h1>
     <br>
+    <h4 id="edit-files">I want to help edit files</h4>
+    <p>Some files might be read-only and may require you to ask for permission from the owner through Google Drive. If you have permission to edit a file, click the <strong>Edit</strong> button in any file viewer, to access the baokao file editor.</p>
+    <div class="flash">
+        When editing through baokao, we recommend using Google Chrome or new Microsoft Edge, as editing files in other browsers such as Mozilla Firefox or Safari currently is not supported. Alternatively, you can always edit files by opening them externally in Google Drive.
+    </div>
+    <br>
     <h4>I want to contribute student resources</h4>
     <div class="content">
         <div class="TimelineItem">
@@ -74,7 +80,7 @@
     <p>Please get in touch with us at <a href="mailto:baokao@adrian.id.au">baokao@adrian.id.au</a>! Keep in mind while baokao is in Early Access there are a number of technical limitations with the site that still currently exist, but we'll do our best to accomodate any of your requests. In the future, we'll hopefully be able to get new repositories started quicker in a more streamlined and efficient way.</p>
     <h4>I want to help improve the baokao web application</h4>
     <p>Pull requests are very much welcome via our <a href="https://github.com/aidswidjaja/baokao" target="_blank">GitHub repository.</a>
-    <br>
+        <br>
     <h4>Other questions?</h4>
     <p>If you have any questions, feel free to email <a href="mailto:baokao@adrian.id.au">baokao@adrian.id.au</a>. Thanks for improving baokao - it's greatly appreciated!</p>
 

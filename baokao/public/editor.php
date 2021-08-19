@@ -40,7 +40,7 @@ try {
         <span id="editing-label">Currently editing</span>
     </span>
     <br><br>
-    <p>Due to technical limitations, only files shared with everyone can be edited on baokao. If editing or suggesting isn't working, try opening the file externally in Google Drive.</p>
+    <p>We recommend using Google Chrome to edit files. <a href="contributions#edit-files">See why</a></p>
     </div>
     <hr>
     <span id="download"><a href="https://drive.google.com/uc?export=download&id=$query" class="btn btn-primary btn-block mb-2" type="button"><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M7.47 10.78a.75.75 0 001.06 0l3.75-3.75a.75.75 0 00-1.06-1.06L8.75 8.44V1.75a.75.75 0 00-1.5 0v6.69L4.78 5.97a.75.75 0 00-1.06 1.06l3.75 3.75zM3.75 13a.75.75 0 000 1.5h8.5a.75.75 0 000-1.5h-8.5z"></path></svg><span>Download</span></a></span>
@@ -49,10 +49,12 @@ try {
     <button class="btn btn-block mb-2" type="button" id="copy-current-location" data-clipboard-target=""><svg class="octicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"><path fill-rule="evenodd" d="M13.5 3a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 3a3 3 0 01-5.175 2.066l-3.92 2.179a3.005 3.005 0 010 1.51l3.92 2.179a3 3 0 11-.73 1.31l-3.92-2.178a3 3 0 110-4.133l3.92-2.178A3 3 0 1115 3zm-1.5 10a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zm-9-5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"></path></svg><span>Share</span></button>
     <hr>
     <p class="h4">Comment</p>
+    <div id="cusdis-parent">
     <div id="cusdis-wrapper">
         <div id="cusdis_thread" data-host="https://cusdis.com" data-css="static/cusdis.css" data-app-id="$cusdis_app_id" data-page-id="$query" data-page-url="https://baokao.adrian.id.au/editor/$query" data-page-title="Editing $query"></div>
     </div>
     <script async src="https://cusdis.com/js/cusdis.es.js"></script>
+    </div>
     </div>
     </div>
 HTML;
