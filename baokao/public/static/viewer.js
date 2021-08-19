@@ -142,8 +142,10 @@ try {
 
                 } else {
                     const drive_link_starter = "https://drive.google.com/file/d/" + google_drive_file_id + "/preview";
-                    const status = document.getElementById('editing-status');
-                    status.innerHTML = "<div class='flash flash-warn'>This type of file can't be edited in baokao.</div>";
+					if (editing_enabled == true) { 
+                    	const status = document.getElementById('editing-status');
+                    	status.innerHTML = "<div class='flash flash-warn'>This file type can't be edited in baokao.</div>";
+					};
                     if (typeof data.resourceKey !== 'undefined') {
                         iframe_link = drive_link_starter + "?resourcekey=" + data.resourceKey;
                         console.log("Drive + Viewing + resourceKey");

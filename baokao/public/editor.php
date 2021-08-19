@@ -31,7 +31,6 @@ try {
     <iframe class="docviewer" id="docviewer-iframe" src="static/loading.php"></iframe>
     <div id="error-message"></div>
     </div>
-
     <div class="sidebar">
     <p class="h3" id="filename"></p>
     <div id="editing-status">
@@ -50,11 +49,10 @@ try {
     <hr>
     <p class="h4">Comment</p>
     <div id="cusdis-parent">
-    <div id="cusdis-wrapper">
-        <div id="cusdis_thread" data-host="https://cusdis.com" data-css="static/cusdis.css" data-app-id="$cusdis_app_id" data-page-id="$query" data-page-url="https://baokao.adrian.id.au/editor/$query" data-page-title="Editing $query"></div>
-    </div>
+    	<div id="cusdis-wrapper">
+        	<div id="cusdis_thread" data-host="https://cusdis.com" data-css="static/cusdis.css" data-app-id="$cusdis_app_id" data-page-id="$query" data-page-url="https://baokao.adrian.id.au/editor/$query" data-page-title="Editing $query"></div>
+    	</div>
     <script async src="https://cusdis.com/js/cusdis.es.js"></script>
-    </div>
     </div>
     </div>
 HTML;
