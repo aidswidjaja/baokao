@@ -129,7 +129,7 @@ try {
                             console.log("Google Doc + Editing");
                         }
                     } else {
-                        const docview_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id;
+                        const docview_link_starter = "https://docs.google.com/" + url_mimetype + "/d/" + google_drive_file_id + "/preview";
                         external_link = docedit_link_starter;
                         if (typeof data.resourceKey !== 'undefined') {
                             iframe_link = docview_link_starter + "?resourcekey=" + data.resourceKey;
