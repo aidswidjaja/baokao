@@ -9,6 +9,20 @@
         height: calc(100vh - 48px);
         float: left;
     }
+    /* H/t https://stackoverflow.com/a/49278385 */
+    .cusdis-parent-viewer {
+        overflow-y: scroll;
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+        height: 50vh;
+    }
+    .cusdis-parent-viewer::-webkit-scrollbar {
+        /* WebKit */
+        width: 0;
+        height: 0;
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -40,4 +54,3 @@
 [for="nickname"] {
     color: var(--color-text-primary) !important;
 }
-
