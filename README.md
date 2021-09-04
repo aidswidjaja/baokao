@@ -45,6 +45,14 @@ Create a API key at https://console.cloud.google.com/apis/credentials and then f
 
 #### Cusdis
 Make an account on https://cusdis.com/ and then fill it in `baokao/include/env.php`.
+
+#### <head>
+
+Replace the following things at `baokao/include/head.php`
+
+- Panelbear script
+- Meta properties
+
 ## license
 
 MIT License - see LICENSE for more info.
