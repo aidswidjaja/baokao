@@ -13,10 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:site_name" content="baokao">
+  <meta property="og:title" content="baokao ~ study resources">
+  <meta property="og:type" content="website">
   <meta property="og:description" content="A free and open-source study resource viewer by aidswidjaja.">
   <meta property="og:image" content="https://baokao.adrian.id.au/baokao.png">
+  <meta property="og:keywords" content="baokao,past papers,study notes,study material,HSC,NSW HSC,aidswidjaja">
   <meta property="og:url" content="https://baokao.adrian.id.au">
-  <meta property="og:provider_name" content="">
   <meta name="theme-color" content="#2188ff">
   <link type="application/json+oembed" href="../public/static/oembed.json" />
 
