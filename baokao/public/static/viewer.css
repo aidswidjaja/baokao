@@ -1,31 +1,35 @@
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 955px) {
+    .viewer {
+        overflow: hidden;
+    }
     .sidebar {
         width: 400px;
         height: calc(100vh - 48px);
         float: right;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .sidebar::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
     .docviewer {
         width: calc(100% - 400px);
         height: calc(100vh - 48px);
         float: left;
     }
-    /* H/t https://stackoverflow.com/a/49278385 */
-    .cusdis-parent-viewer {
-        overflow-y: scroll;
-        scrollbar-width: none;
-        /* Firefox */
-        -ms-overflow-style: none;
-        /* Internet Explorer 10+ */
-        height: 40vh;
+    .docviewer::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
     .cusdis-parent-viewer::-webkit-scrollbar {
-        /* WebKit */
         width: 0;
         height: 0;
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 955px) {
     .sidebar {
         width: 100%;
         height: 95vh;
