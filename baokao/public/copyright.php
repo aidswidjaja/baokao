@@ -12,7 +12,7 @@
 		<ul class="content">
 			<li>Users retain all rights to information they create and distribute on our site. You may remove your content from baokao at any time through normal means.</li>
 			<li>It is expected that users do not infringe federal copyright law as set out under the Copyright Act 1968 (Cwth.) - doing so may result in a suspension of service to infringing users.</li>
-			<li>We generally permit otherwise-copyrighted material such as past papers, for purposes of research and study under fair dealing. However, users may be asked to remove offending should we receive a valid takedown notice.</li>
+			<li>We generally permit otherwise-copyrighted material such as past papers, for purposes of research and study under fair dealing. However, users may be asked to remove offending material should we receive a valid takedown notice.</li>
 		</ul>
 		<h4>Takedown notices</h4>
 		<ul class="content">
