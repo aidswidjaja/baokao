@@ -41,7 +41,7 @@ HTML;
 
     /* when the ID is just a standard folder, display standard tree logic executed */
     echo <<<HTML
-            <title>baokao</title>
+			<title id="folder-title">Loading... | baokao</title>
             <h1 id="folder-name"></h1>
             <script>
                 const google_drive_folder_id = '$query';

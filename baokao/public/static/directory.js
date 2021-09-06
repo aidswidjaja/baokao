@@ -1,5 +1,6 @@
 const folder_request = "https://www.googleapis.com/drive/v3/files/" + google_drive_folder_id + "/?key=" + google_drive_api_key;
 const folder_name = document.getElementById('folder-name');
+const folder_title = document.getElementById('folder-title');
 const parent_button = document.getElementById('parent-button');
 const errordiv = document.getElementById('errordiv');
 
@@ -13,6 +14,7 @@ fetch(folder_request)
             let CleanFilename = DOMPurify.sanitize(data.name);
             /* let CleanParent = DOMPurify.sanitize(data.parents[0]); */ /* we can't add a directory "Back to parent folder" button until we gain access to privileged scopes */
             folder_name.innerHTML = CleanFilename;
+			folder_title.innerHTML = CleanFilename + ' | baokao';
         }
     )
 });
