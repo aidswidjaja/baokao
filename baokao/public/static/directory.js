@@ -1,4 +1,4 @@
-const folder_request = "https://www.googleapis.com/drive/v3/files/" + google_drive_folder_id + "/?key=" + google_drive_api_key;
+const folder_request = "https://www.googleapis.com/drive/v3/files/" + google_drive_folder_id + "/?orderBy=name&key=" + google_drive_api_key;
 const folder_name = document.getElementById('folder-name');
 const folder_title = document.getElementById('folder-title');
 const parent_button = document.getElementById('parent-button');

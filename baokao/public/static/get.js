@@ -1,4 +1,4 @@
-const request = "https://www.googleapis.com/drive/v3/files?q='" + google_drive_folder_id + "'+in+parents&key=" + google_drive_api_key;
+const request = "https://www.googleapis.com/drive/v3/files?q='" + google_drive_folder_id + "'+in+parents&orderBy=name&key=" + google_drive_api_key;
 const file_explorer = document.getElementById('file-explorer');
 const loading_repo = document.getElementById('repositories-loading');
 
