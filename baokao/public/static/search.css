@@ -1,0 +1,10 @@
+.search-tip {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.search-hint {
+    font-size: 20px;
+    font-weight: bold;
+}
