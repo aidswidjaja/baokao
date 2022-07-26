@@ -35,7 +35,6 @@ Because I hate high-quality maintainable code that uses the industry-standard MV
 - `baokao/public/static/env.js`
 - `baokao/include/env.php`
 
-### keys
 #### Google Drive API
 Create a API key at https://console.cloud.google.com/apis/credentials and then fill it in `baokao/public/static/env.js`.
 

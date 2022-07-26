@@ -53,25 +53,27 @@
 
 </head>
 
-<body class="no-js" data-color-mode="" data-light-theme="light" data-dark-theme="dark" prefers-color-scheme="" style="visibility: hidden;">
-  <script>
-    document.querySelector('body').classList.remove('no-js');
-  </script>
-  <noscript>
-    <div class="flash mt-3 flash-error">
-      <svg class="octicon octicon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
-        <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"></path>
-      </svg>
-      <strong> You don't have JavaScript enabled!</strong> You'll probably experience errors trying to access baokao. Make sure your network connection is stable. If you're in a school network, ask your network administrator to whitelist <strong>baokao.adrian.id.au</strong> so you can use the site properly :)
-    </div>
-  </noscript>
-  <!--[if lt IE 9]>
+<noscript>
+  <div class="flash mt-3 flash-error">
+    <svg class="octicon octicon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+      <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"></path>
+    </svg>
+    <strong> You don't have JavaScript enabled!</strong> You'll probably experience errors trying to access baokao. Make sure your network connection is stable. If you're in a school network, ask your network administrator to whitelist <strong>baokao.adrian.id.au</strong> so you can use the site properly :)
+  </div>
+</noscript>
+<!--[if lt IE 9]>
+<br>
 <div class="flash mt-3 flash-error">
       <svg class="octicon octicon-container" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
         <path fill-rule="evenodd" d="M2.343 13.657A8 8 0 1113.657 2.343 8 8 0 012.343 13.657zM6.03 4.97a.75.75 0 00-1.06 1.06L6.94 8 4.97 9.97a.75.75 0 101.06 1.06L8 9.06l1.97 1.97a.75.75 0 101.06-1.06L9.06 8l1.97-1.97a.75.75 0 10-1.06-1.06L8 6.94 6.03 4.97z"></path>
       </svg>
       <strong> You are using Internet Explorer 9 or below, which is not supported by baokao. <a href="https://browsehappy.com/">Please switch to a more modern web browser.</a>
     </div>
-  <![endif]-->
+<![endif]-->
+
+<body class="no-js" data-color-mode="" data-light-theme="light" data-dark-theme="dark" prefers-color-scheme="" style="visibility: hidden;">
+  <script>
+    document.querySelector('body').classList.remove('no-js');
+  </script>
 
   <?php require '../../vendor/autoload.php'; ?>

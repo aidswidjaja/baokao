@@ -22,7 +22,7 @@
                 $info = strip_tags($row['info']);
                 $slug = strip_tags($row['slug']);
                 $colour = strip_tags($row['colour']);
-                $image = strip_tags($row['image']);
+                $image = strip_tags($row['image']); /* PHP 8.1 complains if null - pass empty whitespace in db */
                 echo <<<HTML
                 <div class="repositories-flexbox">
                     <div onclick="location.href = 'tree?$slug'" class="Box--spacious border-none rounded-1 f4 repositories-unit-container color-shadow-medium hover-grow">
